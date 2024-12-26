@@ -2,12 +2,12 @@ version: 0.0.1
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
+  # requirements.txt for windows.wsl2
   bootstrap: |
-    sudo apt update && sudo apt install ffmpeg -y
+    sudo apt update && sudo apt install clang && sudo apt install ffmpeg -y
+    pnpm install && pip install -r requirements.txt
     python prepareVideoLingo.py
     cd VideoLingo
     python install.py
-    streamlit run st.py
-    # pnpm install && pip install -r requirements.txt
 dependencies:
   {}
