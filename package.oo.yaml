@@ -4,8 +4,11 @@ scripts:
   # eg: bootstrap: pip install pandas
   # requirements.txt for windows.wsl2
   bootstrap: |
-    sudo apt update && sudo apt install clang && sudo apt install ffmpeg -y
-    pnpm install && pip install -r requirements.txt
+    set -e
+    sudo apt-get update
+    pip install --upgrade pip
+    # sudo apt install clang -y # for windows only?
+    sudo apt install ffmpeg -y
     python prepareVideoLingo.py
     cd VideoLingo
     python install.py
