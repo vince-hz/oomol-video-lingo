@@ -18,3 +18,8 @@ dependencies:
 name: oomol-video-lingo
 description: Use videolingo to generate better subtitles for videos.
 displayName: oomol-video-lingo
+repository: https://github.com/vince-hz/oomol-video-lingo
+releaseNotes: |-
+  - Allow choose between built-in llm and custom llm.
+  - Allow local video path and remote video url.
+  - One shot to install the whole dependencies.
