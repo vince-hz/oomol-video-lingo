@@ -1,7 +1,7 @@
 from oocana import Context
 import os, sys
 
-vlPath = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))), "VideoLingo")
+vlPath = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "VideoLingo")
 
 # switch to vlPath
 os.chdir(vlPath)
