@@ -1,71 +1,10 @@
 nodes:
-  - task:
-      ui:
-        default_width: 450
-      inputs_def:
-        - handle: video-path
-          description: Input
-          json_schema:
-            anyOf:
-              - type: string
-                ui:widget: file
-              - type: string
-            ui:options:
-              labels:
-                - local-path
-                - video-url
-        - handle: source-language
-          json_schema:
-            enum:
-              - ja
-              - zh
-              - en
-            ui:options:
-              labels:
-                - ja
-                - zh
-                - en
-          value: ""
-        - handle: merge-subtitles-to-video
-          json_schema:
-            type: boolean
-          value: ""
-        - handle: llm
-          json_schema:
-            anyOf:
-              - type: "null"
-              - type: object
-                properties:
-                  api-key:
-                    contentMediaType: oomol/secret
-                    type: string
-                  model:
-                    type: string
-                  base-url:
-                    type: string
-            ui:options:
-              labels:
-                - built-in-llm
-                - custom-llm
-          value: ""
-          nullable: true
-      outputs_def:
-        - handle: subtitle-path
-          description: Output
-          json_schema:
-            type: string
-            minLength: 1
-            ui:widget: file
-      executor:
-        name: python
-        options:
-          entry: scriptlets/+python#1.py
-    title: "generate-subtitle"
-    icon: ":fa6-solid:language:"
-    node_id: +python#1
+  - task: self::generate-subtitle
+    title: "generate-subtitle #1"
+    node_id: generate-subtitle#1
     inputs_from:
       - handle: video-path
-        value: https://www.youtube.com/shorts/ZFTWv9bukkw
+        value: ""
         schema_overrides:
           - ui:options:
               selected: 1
