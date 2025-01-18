@@ -44,6 +44,7 @@ inputs_def:
           - built-in-llm
           - custom-llm
     value:
+      model: gemini-pro
     nullable: true
 outputs_def:
   - handle: subtitle-path

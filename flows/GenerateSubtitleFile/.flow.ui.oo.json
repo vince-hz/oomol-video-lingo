@@ -1,29 +1,19 @@
 {
   "nodes": {
-    "+python#1": {
-      "contentWidth": 899.1453788603712,
+    "generate-subtitle#1": {
       "rfNode": {
         "position": {
-          "x": -257.08267808086225,
-          "y": -130.6139166442938
+          "x": 0,
+          "y": 0
         }
       },
       "sections": {
         "inputs": {
           "collapsed": {
-            "apikey": {
-              "[]": false
-            },
             "llm": {
               "[]": false
             }
           }
-        },
-        "scriptlet": {
-          "manualHeight": 454.44168484838383
-        },
-        "preview": {
-          "cardCollapsed": true
         }
       }
     }

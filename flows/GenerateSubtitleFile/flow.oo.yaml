@@ -4,15 +4,15 @@ nodes:
     node_id: generate-subtitle#1
     inputs_from:
       - handle: video-path
-        value: ""
         schema_overrides:
-          - ui:options:
-              selected: 1
+          []
       - handle: source-language
         value: ja
       - handle: merge-subtitles-to-video
         value: false
       - handle: llm
         value:
+          model: gemini-pro
         schema_overrides:
-          []
+          - ui:options:
+              selected: 1
