@@ -21,7 +21,7 @@ inputs_def:
           - ja
           - zh
           - en
-    value: ""
+    value: en
   - handle: merge-subtitles-to-video
     json_schema:
       type: boolean
@@ -43,8 +43,6 @@ inputs_def:
         labels:
           - built-in-llm
           - custom-llm
-    value:
-      model: gemini-pro
     nullable: true
 outputs_def:
   - handle: subtitle-path

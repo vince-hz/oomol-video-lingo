@@ -1,19 +1,11 @@
 {
   "nodes": {
     "generate-subtitle#1": {
+      "contentWidth": 450,
       "rfNode": {
         "position": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      "sections": {
-        "inputs": {
-          "collapsed": {
-            "llm": {
-              "[]": false
-            }
-          }
+          "x": -28.179404506273784,
+          "y": -74.85984745641564
         }
       }
     }
